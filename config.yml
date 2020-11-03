@@ -1,5 +1,5 @@
-MDBC_WELCOME_MESSAGE: "Simple and Secure"
-MDBC_PRIMARY_COLOR: "#C33434" # red
+MDBC_WELCOME_MESSAGE: "Inspiring the Exceptional"
+MDBC_PRIMARY_COLOR: "#61046e" # purple
 
 # Footer links are dictionaries with a "title" and "url"
 # To remove all links, write:

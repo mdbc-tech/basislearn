@@ -1,15 +1,15 @@
-MDBC_WELCOME_MESSAGE: "Inspiring the Exceptional"
-MDBC_PRIMARY_COLOR: "#61046e" # purple
+DUR_WELCOME_MESSAGE: "Inspiring the Exceptional"
+DUR_PRIMARY_COLOR: "#61046e" # purple
 
 # Footer links are dictionaries with a "title" and "url"
 # To remove all links, write:
-# MDBC_FOOTER_NAV_LINKS: []
-# MDBC_FOOTER_LEGAL_LINKS: []
-MDBC_FOOTER_NAV_LINKS:
+# DUR_FOOTER_NAV_LINKS: []
+# DUR_FOOTER_LEGAL_LINKS: []
+DUR_FOOTER_NAV_LINKS:
   - title: "About"
     url: "/about"
   - title: "Contact"
     url: "/contact"
-MDBC_FOOTER_LEGAL_LINKS:
+DUR_FOOTER_LEGAL_LINKS:
     - title: "Terms of service"
       url: "/tos"

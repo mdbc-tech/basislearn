@@ -1,15 +1,15 @@
-DUR_WELCOME_MESSAGE: "Inspiring the Exceptional"
-DUR_PRIMARY_COLOR: "#61046e" # purple
+BAS_WELCOME_MESSAGE: "Welcome to Baby Sleep info"
+BAS_PRIMARY_COLOR: "#61046e" # red
 
 # Footer links are dictionaries with a "title" and "url"
 # To remove all links, write:
-# DUR_FOOTER_NAV_LINKS: []
-# DUR_FOOTER_LEGAL_LINKS: []
-DUR_FOOTER_NAV_LINKS:
+# BAS_FOOTER_NAV_LINKS: []
+# BAS_FOOTER_LEGAL_LINKS: []
+BAS_FOOTER_NAV_LINKS:
   - title: "About"
     url: "/about"
   - title: "Contact"
     url: "/contact"
-DUR_FOOTER_LEGAL_LINKS:
+BAS_FOOTER_LEGAL_LINKS:
     - title: "Terms of service"
       url: "/tos"

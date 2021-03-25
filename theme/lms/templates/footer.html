@@ -59,8 +59,7 @@
               <p>
                 <a href="http://www.basisonline.org.uk" rel="noopener" target="_blank">
                   <img src="${static.url('images/logo.png')}" alt="Basis" width="140" />
-                  
-                 <a href="${footer['openedx_link']['url']}" rel="noopener" target="_blank">
+                <a href="${footer['openedx_link']['url']}" rel="noopener" target="_blank">
                   <img src="${static.url('images/openedx-logo.png')}" alt="${footer['openedx_link']['title']}" width="140" />
                 </a>
               </p>
@@ -141,6 +140,8 @@
       % if not hide_openedx_link:
       <div class="footer-about-openedx">
         <p>
+          <a href="http://www.basisonline.org.uk" rel="noopener" target="_blank">
+            <img src="${static.url('images/logo.png')}" alt="Basis" width="140" />
            <a href="${footer['openedx_link']['url']}" rel="noopener" target="_blank">
             <img src="${static.url('images/openedx-logo.png')}" alt="${footer['openedx_link']['title']}" width="140" />
           </a>

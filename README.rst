@@ -1,25 +1,25 @@
-Indigo, a cool blue theme for Open edX
+Basislearn, a customised theme for Open edX
 ======================================
 
-Indigo is an elegant, customizable theme for `Open edX <https://open.edx.org>`__.
+Basislearn is an elegant, customizable theme for `Open edX <https://open.edx.org>`__.
 
 .. image:: ./screenshots/01-landing-page.png
     :alt: Platform landing page
 
-**Note**: This version of the Indigo theme is compatible with the Juniper release of Open edX.
+**Note**: This version of the Basislearn theme is compatible with the koa release of Open edX.
 
 Installation
 ------------
 
-Indigo was specially developed to be used with `Tutor <https://docs.overhang.io>`__ (at least v3.11.1). If you have not installed Open edX with Tutor, then installation instructions will vary.
+this theme is forked from the indigo theme which  was specially developed to be used with `Tutor <https://docs.overhang.io>`__ (at least v3.11.1). If you have not installed Open edX with Tutor, then installation instructions will vary.
 
 Clone the theme repository::
 
-    git clone https://github.com/overhangio/indigo
+    git clone https://github.com/mdbc-tech/basislearn.git
 
 Render your theme::
 
-    tutor config render --extra-config ./indigo/config.yml ./indigo/theme "$(tutor config printroot)/env/build/openedx/themes/indigo"
+    tutor config render --extra-config ./basislearn/config.yml ./basislearn/theme "$(tutor config printroot)/env/build/openedx/themes/basislearn"
 
 Rebuild the Openedx docker image::
 
@@ -29,9 +29,9 @@ Restart your platform::
 
     tutor local start -d
 
-You will then have to enable the "indigo" theme, as per the `Tutor documentation <https://docs.tutor.overhang.io/local.html#setting-a-new-theme>`__::
+You will then have to enable the "basislearn" theme, as per the `Tutor documentation <https://docs.tutor.overhang.io/local.html#setting-a-new-theme>`__::
 
-    tutor local settheme indigo localhost studio.localhost \
+    tutor local settheme basislearn localhost studio.localhost \
         $(tutor config printvalue LMS_HOST) $(tutor config printvalue CMS_HOST)
 
 Upgrade
@@ -39,7 +39,7 @@ Upgrade
 
 To upgrade the Indigo theme from a previous version, simply pull the changes from the git repository::
 
-    cd indigo/
+    cd basislearn/
     git pull
 
 Then run the commands above starting from ``tutor config render...``.
@@ -53,9 +53,9 @@ Setting custom values
 A few settings in the theme can be easily customised: this includes the theme primary color, landing page tagline, footer legal links. Theme settings are defined in the `config.yml <https://github.com/overhangio/indigo/blob/master/config.yml>`__ file at the root of the repository. You can override all or part of those settings by creating you own ``config-custom.yml`` file. Then, render the theme with::
 
     tutor config render \
-        --extra-config ./indigo/config.yml \
-        --extra-config ./indigo/config-custom.yml \
-        ./indigo/theme "$(tutor config printroot)/env/build/openedx/themes/indigo"
+        --extra-config ./basislearn/config.yml \
+        --extra-config ./basislearn/config-custom.yml \
+        ./basislearn/theme "$(tutor config printroot)/env/build/openedx/themes/basislearn"
 
 Changing the default logo and other images
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

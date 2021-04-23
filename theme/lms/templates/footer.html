@@ -14,7 +14,7 @@
   <div class="container-fluid wrapper-footer">
     <footer>
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-8">
           {% if BAS_FOOTER_NAV_LINKS %}
           <nav class="navbar site-nav navbar-expand-sm" aria-label="${_('About')}">
             <ul class="navbar-nav">
@@ -49,14 +49,16 @@
           </nav>
           {% endif %}
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
           ## Please leave this link and use one of the logos provided
           ## The OpenEdX link may be hidden when this view is served
           ## through an API to partner sites (such as marketing sites or blogs),
           ## which are not technically powered by Open edX.
           % if not hide_openedx_link:
             <div class="footer-about-openedx">
-              <p>  
+              <p> &nbsp; 
+                <a href="https://www.lullabytrust.org.uk/" rel="noopener" target="_blank">
+                  <img src="${static.url('images/trust.png')}" alt="lullaby trust" width="140" />
                  &nbsp;
                 <a href="https://www.basisonline.org.uk" rel="noopener" target="_blank">
                   <img src="${static.url('images/logo.png')}" alt="Basis" width="140" />
@@ -141,7 +143,10 @@
       ## which are not technically powered by OpenEdX.
       % if not hide_openedx_link:
       <div class="footer-about-openedx">
-        <p>
+        <p> &nbsp;
+          <a href="https://www.lullabytrust.org.uk/" rel="noopener" target="_blank">
+          <img src="${static.url('images/trust.png')}" alt="lullaby trust" width="140" />
+          &nbsp;
           <a href="https://www.basisonline.org.uk" rel="noopener" target="_blank">
             <img src="${static.url('images/logo.png')}" alt="Basis" width="140" />
             &nbsp; 
